@@ -36,13 +36,13 @@ class Server{
             console.log('La conexión no se ha podido realizar');
             throw new Error(error);
         }
-    }
+    };
 
     listen(){
         this.app.listen(process.env.PORT, ()=>{
             console.log(`El servidor se encuentra en el puerto ${this.port}`)
         });
-    }
-}
+    };
+};
 
 module.exports = Server;
